@@ -1,0 +1,1237 @@
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5vw;
+   outline: none;
+    
+}
+
+/* General Body styling */
+
+
+
+#body {
+    
+    background: linear-gradient(to top, rgb(1, 17, 1) 10%, rgb(1, 37, 1) 20%, rgb(0, 49, 0)40%,  rgb(1, 59, 1) 80%, rgb(0, 78, 0) 100%);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background-color .8s ease;
+
+    }
+    
+
+
+/* Styling  for header section starts here  */
+
+
+
+
+header {
+    border-bottom: 2px solid rgb(33, 126, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 0% 0% 0%;
+    height:7rem;
+    margin: 0% 8% 0% 8%;
+    
+    
+}
+.logo {
+    
+    font-family: 'Ephesis', cursive;
+}
+.logo a {
+    text-decoration: none;
+
+    transition: all .6s ease;
+}
+#logo{
+    color: rgb(180, 255, 180);
+    font-size: 2.2rem;
+    font-family: 'Ephesis', cursive;
+}
+#logo-veg{
+    font-size: 2.2rem;
+    vertical-align: center;
+
+}
+#logo iconify-icon{
+    vertical-align: center;
+}
+
+
+#logo:hover{
+    color: rgba(255, 8, 0, 0.712);
+}
+#logo:active {
+    color: rgb(127, 255, 176);
+}
+
+.navlinks-a {
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-size: large; */
+    font-size: 1rem;
+    margin-left: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 6px;
+    transition: all .5s ease;
+}
+
+
+nav {
+transition: all .55s ease;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+.navlinks-a:hover {
+        border-bottom: 2px solid aliceblue;
+        padding-bottom: 0px;
+    }
+   
+   
+.navlinks-a:active {
+    color:  rgb(127, 255, 176);
+    border-bottom-color:  rgb(127, 255, 176);
+}
+
+
+
+.search-icon{
+  
+   width: 1.6rem;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 5px;
+    transition: all .55s ease;
+    position: relative;
+     border-radius: 20rem;
+    transition: all .6s ease;
+
+}
+.search-icon iconify-icon{
+    width: 1.6rem;
+    font-size:1.6rem;
+}
+#search-bar{
+    border-radius: 30rem;
+    border-bottom: 2px solid green;
+    right: 21rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding:.3rem .6rem;
+    transition: all .5s ease;
+    overflow: hidden;
+    width: 2.5rem;
+    position: absolute;
+}
+
+#search-bar.open {
+    width: 28rem;
+
+}
+#search-bar:hover .search-icon{
+    transform: scale(1.1);
+}
+.search-icon{
+    transition: all .3s ease;
+}
+.lets-icons--search-duotone {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none'%3E%3Cpath fill='aliceblue' fill-opacity='0.25' fill-rule='evenodd' d='M12 19a7 7 0 1 0 0-14a7 7 0 0 0 0 14M10.087 7.38A5 5 0 0 1 12 7a.5.5 0 0 0 0-1a6 6 0 0 0-6 6a.5.5 0 0 0 1 0a5 5 0 0 1 3.087-4.62' clip-rule='evenodd'/%3E%3Cpath stroke='aliceblue' stroke-linecap='round' d='M20.5 20.5L17 17'/%3E%3Ccircle cx='11' cy='11' r='8.5' stroke='aliceblue'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+
+
+#search-bar input{
+    width: 25rem;
+    transform:scaleX(1);
+    transform-origin: left;
+    padding: .3rem .8rem;
+    margin-left:.3rem;
+    margin-right:.3rem;
+    font-size: 1.2rem;
+    background-color: rgba(54, 119, 54, 0.301)  ;
+    color: aliceblue;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    transition: all .6s ease;
+    
+    /* border-radius: 12px; */
+    
+}
+
+
+
+
+
+
+ #cancel-search{
+    padding: .3rem .3rem 0rem .3rem;
+    transition: all .55s ease;
+    transform: scale(1);
+    width: 30px ;
+    cursor : pointer;
+}
+#cancel-search {
+    font-size:1.6rem;
+}
+
+nav{
+    width: fit-content;
+     transform: scaleX(1);
+     transition: all .5s ease;
+
+}
+nav.search{
+    width: 0;
+    transform: scaleX(0);
+}
+
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+
+
+
+
+.log button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    border: 2px solid rgba(0, 189, 63, 0.884);
+    background: rgba(0, 189, 63, 0.884);
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    transition: all .6s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.log button:hover {
+    background: transparent;
+}
+.sign button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    border: 2px solid rgba(0, 189, 63, 0.884);
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: .5rem 1rem ;
+    background-color: transparent;
+    transition: all .6s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.sign button:hover {
+    background: rgba(0, 189, 63, 0.884);
+
+}
+
+
+.sign button:active {
+    transform: scaleX(.8);
+}
+
+.log button:active {
+    transform: scaleX(.8);
+}
+
+#ham-menu{
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 2px solid transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all .6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+#ham-menu.active{
+    transform: rotate(-360deg);
+
+}
+
+#ham-menu span{
+    height: .15rem;
+    width: 100%;
+    transition: all .6s ease;
+    position: relative;
+    background: aliceblue;
+    border-radius: 30px;
+    
+}
+
+
+
+/* Toggle Ham- menu */
+
+#ham-menu.active span:nth-child(1){
+    margin-top:1rem ;
+    transform: rotate(45deg);
+}
+#ham-menu.active span:nth-child(2){
+
+    display: none;
+    transition: all .8s ease;
+}
+#ham-menu.active span:nth-child(3){
+    position: absolute;
+    margin-top:1rem ;
+    transform: rotate(-45deg);
+}
+
+.fluent--dark-theme-20-filled {
+    position: relative;
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='aliceblue' d='M10 3.5a6.5 6.5 0 1 1 0 13zM10 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16'/%3E%3C/svg%3E");
+  }
+
+
+  /* Styling for Header Section end here */
+
+
+
+
+
+
+/* Background Blur Effect */
+
+#blur{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid transparent;
+    top: 0;
+    left: 0;
+    transition: all .4s ease;
+    z-index: -100;
+
+
+}
+#blur.active{
+    
+    z-index: 100;
+    backdrop-filter: blur(4px);
+
+
+}
+
+
+/* Styling for Login and Signup forms */
+
+
+
+div.forms {
+    position: absolute;
+    height:30rem;
+    margin-left: 40%;
+    left: -8%;
+    top: 7rem; 
+    padding: 0rem;
+    z-index: 1500;
+    overflow:hidden;                              
+    transform:scale(0);            
+    transform-origin:center;                      
+    transition: all .2s ease;              
+    overflow:hidden;
+    z-index: 1000;
+    /* border: 2px solid blue; */
+
+}
+
+div.forms.open{
+   transform: scale(1);
+
+}
+
+
+
+
+div.loginContainer{
+    height: 26rem;
+    width: 22rem;
+    border-radius: .2rem;
+    background: rgb(56, 122, 56);
+    padding: 2rem 1.8rem;
+    position: relative;
+    bottom: -2rem;
+    transition: all .3s ease;
+    transform: translateX(-23rem);
+    opacity: 0;
+    /* border: 2px solid red; */
+
+}
+
+div.loginContainer.open{
+    transform: translateX(0rem);
+    opacity: 1;
+
+}
+
+
+.forms .form-heading{
+
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+
+div.loginContainer .inputEmail, .inputPassword{
+
+    margin-top: 1rem;
+}
+
+.forms input{
+    font-size: 1.2rem;
+
+    height: 3rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(0, 26, 0);
+    color: rgba(240, 248, 255, 0.932);
+    transition: all .3s ease;
+}
+
+div.loginContainer input::placeholder{
+    color: rgba(240, 248, 255, 0.521);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.loginContainer input:focus{
+    border-bottom: 2px solid rgb(165, 209, 165);
+
+}
+
+.forms .button{
+    width: 100%;
+    margin-top: 3.5rem;
+    height: 3rem;
+    border: none;
+    border-radius:.2rem;
+    margin-bottom: 2rem ;
+    background: rgba(0, 189, 63, 0.884);
+    font-weight:500;
+    font-size: 1.2rem;
+
+    color: aliceblue;
+    transition:transform .4s ease
+}
+
+div.loginContainer .BtnLogin:active{
+    transform: scale(.95);
+}
+
+
+div.loginContainer .signup{
+    color: rgb(81, 206, 81);
+    cursor: pointer;
+    font-size: 1rem;
+
+
+}
+
+div.loginContainer .signup:hover{
+    text-decoration: underline;
+
+}
+
+.forms p.already{
+    color: rgba(240, 248, 255, 0.829);
+    font-size: 1rem;
+}
+
+
+
+
+
+div.SignupContainer{
+    height: 29.5rem;
+    width: 22rem;
+    /* border: 2px solid green; */
+    border-radius: .2rem;
+    background: rgb(56, 122, 56);
+    padding: 2rem 1.8rem;
+    position: relative;
+    top: -26rem;
+    transition: all .3s ease;
+    transform: translateX(23rem);
+    opacity: 0;
+}
+
+div.SignupContainer.open{
+    transform: translateX(0rem);
+    opacity: 1;
+}
+
+div.SignupContainer #cancelICon{
+
+    height: 4rem;
+    width:4rem;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    background: black;
+}
+
+
+div.SignupContainer #cancelICon :nth-child(2){
+    height: 2px;
+    width: 2rem;
+    background: aliceblue;
+
+}
+
+
+
+
+
+div.SignupContainer .inputUsername, .inputEmail, .inputPassword{
+    margin-top: 1rem;
+}
+
+
+div.SignupContainer input:focus{
+    border-bottom: 2px solid rgb(165, 209, 165);
+
+}
+
+div.SignupContainer input::placeholder{
+    color: rgba(240, 248, 255, 0.521);
+
+}
+
+
+
+div.SignupContainer .BtnSignup:active{
+    transform: scale(.95);
+}
+
+
+.forms .alt{
+    color: rgb(81, 206, 81);
+    cursor: pointer;
+        font-size: 1rem;
+
+}
+
+.forms .alt:hover{
+    text-decoration: underline;
+
+}
+
+
+div.cancelIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+    /* border: 2px solid red; */
+    cursor : pointer;
+    position : absolute;
+    top: 0;
+    right: 0;
+}
+
+.iconoir--cancel {
+    position: absolute;
+    top: 0;
+    right: 0 ;
+    
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='aliceblue' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+
+
+
+
+
+/* Styling for Side-Menu starts here */
+
+#sidemenu {
+    border: 2px solid  transparent;
+    border-radius: .1rem;
+    background: rgb(70, 145, 70);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   bottom: 0;
+    right: -100%;
+    width: 30rem;
+    max-width:100%;
+    height: calc(100% - 7rem);
+    padding-top: 30px;
+    transition: all .6s ease;
+    position: fixed;
+}
+#sidemenu.open{
+    right: 0%;
+}
+ .sidemenulinks a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 1px solid rgb(70, 145, 70);
+    padding: 12px 0px;
+
+}
+.sidemenulinks{
+    padding-top: 20%;
+}
+.display-modes{
+    bottom: 2%;
+    left: 50%;
+    position: absolute;
+    text-align: left;
+}
+
+#night-mode, #bright-mode{
+    border: 3px solid rgba(0, 255, 85, 0.753);
+    border-radius: 30px;
+    padding: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s ease;
+}
+
+#bright-mode{
+    display: none;
+}
+
+
+.sidemenu-buttons{
+    margin-top: 5%;
+}
+
+.sidemenu-buttons-log a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+    color: aliceblue;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background: rgb(0, 189, 63);
+    margin-right: 4px;
+    transition: all .6s ease;
+    text-decoration: none;
+
+
+}
+.sidemenu-buttons-log a:hover {
+    background-color:  rgb(0, 150, 50);
+}
+.sidemenu-buttons-sign a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+    color: aliceblue;
+    border: 2px solid rgb(70, 145, 70);
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: transparent;
+    transition: all .6s ease;
+    text-decoration: none;
+
+}
+.sidemenu-buttons-sign a:hover {
+    background-color:  rgb(0, 189, 63);
+}
+.sidemenu-buttons-sign a:active {
+    padding: 6px 10px;
+}
+
+
+/* Styling for Side-Menu ends here */
+
+
+
+
+
+
+main {
+    
+    padding: 5% 8% 4% 8%;
+   
+}
+.main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text{
+    max-width:70% ;
+
+}
+
+.image {
+    width: 30%;
+    height: 15rem;
+    border: 2px solid transparent;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden    ;
+    object-position: center;
+    object-fit: cover;
+
+
+
+   background: linear-gradient(        
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    rgba(211, 211, 211, 0.199);
+  background-repeat: repeat-y;        
+  background-size: 50px 200px;        
+  background-position: 0 0; 
+  animation: loading;
+  animation-duration: 1s;  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;        
+}
+
+
+@keyframes loading{
+
+    0%{
+        background-position:0% 0 ;  
+    }
+    100%{
+        background-position:100% 0 ;  
+    }
+   
+   
+ 
+}
+
+.image.loaded{
+animation: none;
+background: transparent;
+}
+
+.picture{
+    width: 100%;
+    height: 20rem;
+    opacity: 0;
+                                                                                                         
+}
+.picture.loaded{
+   
+    opacity: 1;
+}
+
+
+#bolder{
+    
+    position: relative;
+    margin-bottom: .5rem;
+    
+}
+#bolder:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(        
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    rgba(211, 211, 211, 0.199);
+  background-repeat: repeat-y;        
+  background-size: 50px 200px;        
+  background-position: 0 0; 
+  animation: loading;
+  animation-duration: 1s;  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius:1rem;
+    
+
+}
+
+#bolder > span{
+    padding-top:1rem;
+    background:linear-gradient(180deg, aliceblue, rgb(0, 255, 76) );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.7rem;
+    font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity .6s ease;
+
+}
+#bolder.loaded > span{
+    opacity: 1;
+}
+ #bolder.loaded:before{
+    animation: none;
+    background: none;
+}
+
+.medium{
+    
+    margin-bottom: .5rem;
+    padding-top:0rem;
+    max-width:90% ;
+    position: relative;
+    
+}
+.medium > span{
+    color:rgba(240, 248, 255, 0.774);
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+.medium.loaded > span{
+    opacity: 1;
+}
+.medium.loaded:before{
+    animation: none;
+    background: transparent;
+}
+
+.medium:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(        
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    rgba(211, 211, 211, 0.199);
+  background-repeat: repeat-y;        
+  background-size: 50px 200px;        
+  background-position: 0 0; 
+  animation: loading;
+  animation-duration: 1s;  
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius:1rem;
+    
+
+}
+
+
+
+
+
+
+
+.small  {
+    color: rgba(183, 255, 205, 0.685);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    max-width:60% ;
+
+}
+.explore{
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    color: rgba(240, 248, 255, 0.884);
+    background-color: rgb(4, 122, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: .7rem 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+    transition: all .6s ease;
+    
+    
+    
+}
+
+.explore:hover {
+    
+    background-color: rgb(0, 189, 63) ;
+    margin-left: 15px;
+ 
+   
+   
+}
+.explore:active {
+    
+        transform: scaleX(.8);
+}
+
+
+/* Designing for light and dark modes... */
+
+
+ 
+
+
+
+
+
+
+
+
+/* This is the end of responsive design for all Laptops, TVs, Projectors, Large screens, Desktops and various computer Viewports */
+
+
+
+
+
+
+/* Responsive design for all Tablets, Phones , and smaller Viewport Devices Starts HERE  */
+
+
+@media all and (max-width:768px){
+    *{
+        font-size: .7rem;
+    }
+    nav{
+         display: none;
+    }
+    #search-bar{
+        right: 23rem;
+    }
+    #search-bar.open {
+        width: 35%;
+    
+    }
+
+    #search-bar input{
+        width: 100%;
+    }
+    #ham-menu{
+        
+        height: 1.8rem;
+    width: 1.8rem;
+    border: 2px solid transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all .6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+}
+
+
+
+div.forms {
+    height: 100%;
+    /* height: fit-content; */
+    width: 25rem;
+    margin-left: 0%;
+    left: 25%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    /* bottom: 7rem; */
+
+}
+div.loginContainer{
+    position: absolute;
+    top: 0vw;
+    opacity:1;
+    /* height: 90vh; */
+    /* height: 100%; */
+    height: 30rem;
+    width: 25rem;
+    transform: translateX(-25rem);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+.forms .form-heading{
+    font-size: 1.5rem
+}
+.forms input{
+    font-size: 1.2rem;
+        height: 3rem; 
+
+}
+.forms .button{
+    font-weight:500;
+    font-size: 1.2rem;
+    height: 3rem; 
+    min-height: 3rem;
+}
+.forms p.already{
+    font-size: 1rem;
+}
+.forms .alt{
+    font-size: 1rem;
+}
+div.SignupContainer{
+    position: absolute;
+    top: 0;
+    opacity:1;
+    /* height: 95vh; */
+    /* height: 100%; */
+    height: 30rem;
+    width: 25rem;
+    transform: translateX(25rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+div.forms.open{
+    transform: scale(1);
+    
+
+ }
+
+ 
+
+
+@media all and (max-width:664px){
+    #bolder > span {
+        font-size: 3.4rem;
+
+    }
+    .medium > span{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    
+}
+
+.medium{
+    margin-bottom: 1rem;
+}
+}
+@media all and (max-width:640px){
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text{
+    max-width:100% ;
+
+}
+
+.image{
+    width: 100%;
+    height:24rem;
+    overflow: visible   ;
+
+}
+
+.picture{
+    height: 20rem;
+    width: auto;
+    border-radius: 1rem;
+}
+}
+
+@media all and ( max-width:620px){
+    button#signupButton{
+        display:none;
+    }
+
+    #search-bar{
+        right: 16rem;
+    }
+    #search-bar.open {
+        width: 45%;
+    
+    }
+}
+
+@media all and (max-width:562px){
+    #search-bar.open {
+        width: 40%;
+    
+    }
+}
+
+@media all and (max-width:538px){
+    
+
+    div.forms {
+        
+        margin-left: 18%;
+        left: 5%;
+        right: 5%;
+       
+    
+    }
+}
+
+@media all and (max-width:500px){
+    *{
+        font-size: 3vw;
+    }
+    
+    div.forms {
+        
+        margin-left: 8%;
+        left: 5%;
+        right: 5%;
+       
+    
+    }
+}
+
+@media all and (max-width:520px){
+    button#loginButton{
+        display:none;
+    }
+     #search-bar{
+        right: 10rem;
+    }
+     #search-bar.open {
+        width: 50%;
+    
+    }
+
+}
+
+@media all and (max-width:472px){
+    *{
+        font-size:3.5vw;
+    }
+    header{
+        height:5rem;
+        margin: 0% 8% 2rem 8%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+    .logo.hidden{
+        opacity:0;
+        transition: opacity .5s ease;
+    }
+
+    .header-buttons.hidden{
+        opacity: 0;
+        transition: opacity .5s ease;
+    }
+    #search-bar.open {
+        width: 85%;
+        right: 2rem;
+
+    }
+
+    #ham-menu{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+     #search-bar{
+        right: 8.5rem;
+    }
+
+    #bolder > span {
+        font-size: 2.5rem;
+
+    }
+    .medium{
+        max-width:95%
+    }
+
+    .medium > span{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color:rgba(240, 248, 255, 0.76);
+
+}
+
+
+
+.small{
+    max-width: 80%;
+}
+
+
+#sidemenu{
+
+    height:calc(100% - 5rem);
+}
+
+div.forms {
+        
+        margin-left: 1%;
+        left: 5%;
+        right: 5%;
+       
+    
+    }
+
+
+}
+ 
+  
